@@ -3,6 +3,7 @@
     "three": "^0.159.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "vite": "^5.0.7"
   }
 }
