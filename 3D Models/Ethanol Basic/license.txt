@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ethanol
+* source:	https://sketchfab.com/3d-models/ethanol-6348a279cdfd49eebbc0b9edbbfba186
+* author:	Edumol (https://sketchfab.com/edumol)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ethanol" (https://sketchfab.com/3d-models/ethanol-6348a279cdfd49eebbc0b9edbbfba186) by Edumol (https://sketchfab.com/edumol) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
