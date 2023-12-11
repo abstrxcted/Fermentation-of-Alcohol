@@ -6,12 +6,13 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer();
 const loader  = new GLTFLoader();
-const light = new THREE.AmbientLight(0x404040, 100.0);
+const red_light = new THREE.DirectionalLight(0xff0000, 50);
+const white_light = new THREE.AmbientLight(0x404040, 25.0);
 const controls = new OrbitControls(camera, renderer.domElement);
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
-controls.autoRotate = true;
+controls.autoRotate = false;
 controls.enableZoom = true;
 
 
@@ -30,6 +31,7 @@ loader.load('res/Ethanol Basic/ethanol.glb', function(gltf) {
     scene.add(model);
     ethanol = model;
     ethanol.scale.set(0.25, 0.25, 0.25);
+    ethanol.position.set(-5, 0, 0);
     
 
 }, undefined, function (error) {
@@ -51,12 +53,15 @@ loader.load('res/Dragon Test/shadow_dragon.glb', function(gltf) {
 // cube creation
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({color:0xff0000});
+const material = new THREE.MeshBasicMaterial({color:0x003000});
 const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 cube.scale.set(1, 1, 1);
-scene.add(light);
-
+cube.position.set(5, 0, 0);
+red_light.position.set(-1000,1000,1000)
+scene.add(red_light);
+scene.add(red_light.target);
+scene.add(white_light)
 camera.position.z = 5;
 controls.update();
 
