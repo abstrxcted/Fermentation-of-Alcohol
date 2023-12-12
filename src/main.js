@@ -15,7 +15,7 @@ const material1 = new THREE.LineBasicMaterial({color:0x000ff});
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
-controls.autoRotate = false;
+controls.autoRotate = true;
 controls.enableZoom = true;
 controls.enablePan = false;
 
